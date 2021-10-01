@@ -1,8 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
 
-import Logo from './pic.jpg'
-
 const Sidebar = ({ siteMetadata }) => (
   <>
     <aside className="sidebar">
@@ -10,7 +8,7 @@ const Sidebar = ({ siteMetadata }) => (
         <div className="about">
           <div className="cover-author-image">
             <Link to="/">
-              <img src={Logo} alt={siteMetadata.author} />
+              <img src={`https://github.com/${siteMetadata.social.github}.png`} alt={siteMetadata.author} />
             </Link>
           </div>
           <div className="author-name">{siteMetadata.author}</div>
